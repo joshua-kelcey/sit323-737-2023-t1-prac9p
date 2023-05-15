@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-svc
+spec:
+  ports:
+    - port: 27017
+      protocol: TCP
+      targetPort: 27017
+      nodePort: 32000
+  selector:
+    app: mongo
+  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jkelcey-prac5p-service
+spec:
+  selector:
+    app: prac5p-calculator-app
+    tier: frontend
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 3040
+
+  
