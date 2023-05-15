@@ -5,9 +5,9 @@ const { MongoClient } = require("mongodb");
 
 
 
-var mongodb_uri = "mongodb://admin:password@localhost:32000/?authMechanism=DEFAULT"; // LOCAL TESTING
+// var mongodb_uri = "mongodb://admin:password@localhost:32000/?authMechanism=DEFAULT"; // LOCAL TESTING
 // var mongodb_uri = "mongodb://admin:password@mongo-svc:32000/?authMechanism=DEFAULT"; // KUBERNETES TESTING
-// var mongodb_uri = "mongodb://admin:password@mongo/?authMechanism=DEFAULT"; // KUBERNETES TESTING
+var mongodb_uri = "mongodb://admin:password@mongo/?authMechanism=DEFAULT"; // KUBERNETES TESTING
 // var mongodb_uri = "mongodb://admin:password@mongo-svc/?authMechanism=DEFAULT"; // KUBERNETES TESTING
 
 
